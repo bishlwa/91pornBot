@@ -24,9 +24,9 @@ captionTemplate = '''标题: %s
 captionTemplateMd = '''标题: %s
 '''
 
-REDIS_HOST = os.getenv('REDIS_HOST')
-REDIS_PORT = int(os.getenv('REDIS_PORT'))
-REDIS_PASS = os.getenv('REDIS_PASS')
+REDIS_HOST = os.getenv('REDIS_HOST', "127.0.0.1")
+REDIS_PORT = int(os.getenv('REDIS_PORT', "6379"))
+REDIS_PASS = os.getenv('REDIS_PASS', "")
 API_ID = int(os.getenv('API_ID'))
 API_HASH = os.getenv('API_HASH')
 BOT_TOKEN = os.getenv('BOT_TOKEN')
