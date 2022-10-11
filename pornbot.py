@@ -201,7 +201,7 @@ async def handle91(event, viewkey, viewkey_url):
         await util.imgCoverFromFile(viewkey + '/' + viewkey + '.mp4', viewkey + '/' + viewkey + '.jpg')
         segstr = await util.seg(title)
 
-        is_seg = '付费' in titles[i]
+        is_seg = '付费' in title
         await cut_video91(is_seg, viewkey)
 
 
